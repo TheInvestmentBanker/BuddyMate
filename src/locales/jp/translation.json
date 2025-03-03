@@ -1,0 +1,17 @@
+{
+    "header.login": "ログイン",
+    "header.signup": "登録",
+    "hero.title": "バディメイト",
+    "hero.subtitle": "完璧な遊び仲間を見つけよう",
+    "hero.button": "今すぐ参加",
+    "features.title": "なぜバディメイト？",
+    "features.verified": "認証済みのつながり",
+    "features.verified_desc": "ユーザー向けビデオKYC、バディ向け物理KYC—100%の信頼。",
+    "features.local": "地元の遊び場",
+    "features.local_desc": "あなたの都市エリアで映画や食事などのバディを見つけよう。",
+    "features.safe": "安全で確実",
+    "features.safe_desc": "位置追跡とSOSボタンであなたを守ります。",
+    "trending.title": "トレンドのバディ",
+    "cta.title": "バディを見つける準備はできていますか？",
+    "cta.button": "今すぐバディメイトに参加"
+  }

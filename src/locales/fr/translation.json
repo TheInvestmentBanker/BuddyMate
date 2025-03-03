@@ -1,0 +1,17 @@
+{
+  "header.login": "Connexion",
+  "header.signup": "Inscription",
+  "hero.title": "BuddyMate",
+  "hero.subtitle": "Trouvez Votre Compagnon Idéal",
+  "hero.button": "Rejoignez Maintenant",
+  "features.title": "Pourquoi BuddyMate?",
+  "features.verified": "Connexions Vérifiées",
+  "features.verified_desc": "KYC vidéo pour les utilisateurs, KYC physique pour les Buddies—100% de confiance.",
+  "features.local": "Sorties Locales",
+  "features.local_desc": "Trouvez des Buddies dans votre région pour des films, des repas ou plus.",
+  "features.safe": "Sûr et Sécurisé",
+  "features.safe_desc": "Suivi de localisation et bouton SOS pour votre protection.",
+  "trending.title": "Buddies Tendance",
+  "cta.title": "Prêt à Trouver Votre Buddy?",
+  "cta.button": "Rejoignez BuddyMate Maintenant"
+}

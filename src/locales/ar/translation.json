@@ -1,0 +1,17 @@
+{
+  "header.login": "تسجيل الدخول",
+  "header.signup": "التسجيل",
+  "hero.title": "بادي ميت",
+  "hero.subtitle": "ابحث عن رفيقك المثالي للتسكع",
+  "hero.button": "انضم الآن",
+  "features.title": "لماذا بادي ميت؟",
+  "features.verified": "اتصالات موثقة",
+  "features.verified_desc": "KYC عبر الفيديو للمستخدمين، KYC الجسدي للباديز—ثقة 100%.",
+  "features.local": "تسكع محلي",
+  "features.local_desc": "ابحث عن باديز في منطقتك الحضرية للأفلام أو الطعام أو أكثر.",
+  "features.safe": "آمن ومحمي",
+  "features.safe_desc": "تتبع الموقع وزر SOS يحافظان على سلامتك.",
+  "trending.title": "الباديز الرائجون",
+  "cta.title": "هل أنت جاهز للعثور على باديك؟",
+  "cta.button": "انضم إلى بادي ميت الآن"
+}

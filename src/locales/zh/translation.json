@@ -1,0 +1,17 @@
+{
+  "header.login": "登录",
+  "header.signup": "注册",
+  "hero.title": "伴侣网",
+  "hero.subtitle": "找到你的完美聚会伙伴",
+  "hero.button": "立即加入",
+  "features.title": "为什么选择伴侣网?",
+  "features.verified": "验证连接",
+  "features.verified_desc": "用户视频KYC，伙伴物理KYC—100%信任。",
+  "features.local": "本地聚会",
+  "features.local_desc": "在你的都市区找到伙伴去看电影、吃饭或更多。",
+  "features.safe": "安全可靠",
+  "features.safe_desc": "位置跟踪和SOS按钮保护你。",
+  "trending.title": "热门伙伴",
+  "cta.title": "准备好找你的伙伴了吗?",
+  "cta.button": "现在加入伴侣网"
+}

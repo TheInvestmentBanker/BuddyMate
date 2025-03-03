@@ -1,0 +1,17 @@
+{
+  "header.login": "लॉगिन",
+  "header.signup": "साइन अप",
+  "hero.title": "बडीमेट",
+  "hero.subtitle": "अपना सही हैंगआउट बडी ढूंढें",
+  "hero.button": "अभी शामिल हों",
+  "features.title": "बडीमेट क्यों?",
+  "features.verified": "सत्यापित कनेक्शन",
+  "features.verified_desc": "उपयोगकर्ताओं के लिए वीडियो KYC, बडीज़ के लिए शारीरिक KYC—100% भरोसा।",
+  "features.local": "स्थानीय हैंगआउट",
+  "features.local_desc": "अपने मेट्रो क्षेत्र में फिल्मों, भोजन या अधिक के लिए बडीज़ ढूंढें।",
+  "features.safe": "सुरक्षित",
+  "features.safe_desc": "स्थान ट्रैकिंग और SOS बटन आपको सुरक्षित रखते हैं।",
+  "trending.title": "ट्रेंडिंग बडीज़",
+  "cta.title": "अपना बडी ढूंढने के लिए तैयार हैं?",
+  "cta.button": "अभी बडीमेट में शामिल हों"
+}
