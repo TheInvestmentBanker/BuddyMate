@@ -20,6 +20,12 @@ if (!fs.existsSync(uploadsDir)) {
   console.log('Created uploads directory');
 }
 
+mongoose.connect('mongodb+srv://Rahul:wr0z1qqZr6U8H10N@cluster0.wj2io.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+}).then(() => console.log('MongoDB connected'))
+  .catch(err => console.error('MongoDB connection error:', err));
+
 // File upload setup with multer
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
