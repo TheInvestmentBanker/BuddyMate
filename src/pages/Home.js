@@ -24,7 +24,7 @@ function Home({ darkMode, setDarkMode, language, setLanguage, isLoggedIn, setIsL
   const [openProfileDialog, setOpenProfileDialog] = useState(false);
 
   useEffect(() => {
-    fetch('http://localhost:5000/buddies')
+    fetch('https://buddymate-backend.onrender.com/buddies')
       .then(res => res.json())
       .then(data => setBuddies(data))
       .catch(err => console.error('Fetch Buddies Error:', err));
@@ -114,7 +114,7 @@ function Home({ darkMode, setDarkMode, language, setLanguage, isLoggedIn, setIsL
           to={`/buddy/${buddy._id}`}
           sx={{ display: 'inline-block', mx: 2, minWidth: 200, textAlign: 'center', bgcolor: 'background.paper', textDecoration: 'none' }}
         >
-          <img src={`http://localhost:5000${buddy.photo}`} alt={buddy.name} style={{ width: '100%', height: '150px', objectFit: 'cover' }} />
+          <img src={`${buddy.photo}`} alt={buddy.name} style={{ width: '100%', height: '150px', objectFit: 'cover' }} />
           <CardContent>
             <Typography variant="h6">{buddy.name}</Typography>
             <Typography color="textSecondary">{buddy.role}</Typography>

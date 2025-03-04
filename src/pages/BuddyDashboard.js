@@ -81,7 +81,7 @@ function BuddyDashboard({ darkMode, setDarkMode, language, setLanguage, userProf
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/buddies/${userProfile._id}`, {
+      const response = await fetch(`https://buddymate-backend.onrender.com/buddies/${userProfile._id}`, {
         method: 'PUT',
         body: data,
       });

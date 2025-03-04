@@ -21,7 +21,7 @@ function ChatConversation({ darkMode, setDarkMode, language, setLanguage, userPr
 
   useEffect(() => {
     if (isLoggedIn) {
-      fetch(`http://localhost:5000/chat/${userProfile.username}/${username}`)
+      fetch(`https://buddymate-backend.onrender.com/chat/${userProfile.username}/${username}`)
         .then(res => res.json())
         .then(data => setMessages(data.messages || []))
         .catch(err => console.error('Fetch Chat Error:', err));

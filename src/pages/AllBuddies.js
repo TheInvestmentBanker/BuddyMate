@@ -18,7 +18,7 @@ function AllBuddies({ darkMode, setDarkMode, language, setLanguage, isLoggedIn, 
   const [buddies, setBuddies] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/buddies')
+    fetch('https://buddymate-backend.onrender.com/buddies')
       .then(res => res.json())
       .then(data => setBuddies(data))
       .catch(err => console.error('Fetch Buddies Error:', err));
@@ -35,7 +35,7 @@ function AllBuddies({ darkMode, setDarkMode, language, setLanguage, isLoggedIn, 
           {buddies.map((buddy) => (
             <Grid item xs={12} sm={6} md={4} key={buddy._id}>
               <Card component={Link} to={`/buddy/${buddy._id}`} sx={{ textDecoration: 'none', bgcolor: 'background.paper' }}>
-                <img src={`http://localhost:5000${buddy.photo}`} alt={buddy.name} style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                <img src={`https://buddymate-backend.onrender.com${buddy.photo}`} alt={buddy.name} style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
                 <CardContent>
                   <Typography variant="h6">{buddy.name}</Typography>
                   <Typography color="textSecondary">{buddy.role}</Typography>

@@ -114,7 +114,7 @@ function SignupBuddy({ darkMode, setDarkMode, language, setLanguage }) {
 
     console.log('Buddy Signup Data:', Object.fromEntries(data)); // Debug log
     try {
-      const response = await fetch('http://localhost:5000/signup-buddy', {
+      const response = await fetch('https://buddymate-backend.onrender.com/signup-buddy', {
         method: 'POST',
         body: data, // Send FormData instead of JSON
       });

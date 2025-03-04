@@ -23,13 +23,13 @@ function BuddyProfile({ darkMode, setDarkMode, language, setLanguage, isLoggedIn
   const [chatUnlocked, setChatUnlocked] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/buddies/${id}`)
+    fetch(`https://buddymate-backend.onrender.com/buddies/${id}`)
       .then(res => res.json())
       .then(data => setBuddy(data))
       .catch(err => console.error('Fetch Buddy Error:', err));
 
     if (isLoggedIn && userProfile.username) {
-      fetch(`http://localhost:5000/chat/${userProfile.username}/${id}`)
+      fetch(`https://buddymate-backend.onrender.com/chat/${userProfile.username}/${id}`)
         .then(res => res.json())
         .then(data => {
           console.log('Chat data:', data);
@@ -54,7 +54,7 @@ function BuddyProfile({ darkMode, setDarkMode, language, setLanguage, isLoggedIn
     if (!message.trim()) return;
 
     try {
-      const response = await fetch('http://localhost:5000/chat', {
+      const response = await fetch('https://buddymate-backend.onrender.com/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -84,7 +84,7 @@ function BuddyProfile({ darkMode, setDarkMode, language, setLanguage, isLoggedIn
       <Header darkMode={darkMode} setDarkMode={setDarkMode} language={language} setLanguage={setLanguage} isLoggedIn={isLoggedIn} userProfile={userProfile} isBuddy={userProfile.isBuddy} />
       <Container maxWidth="md" sx={{ py: 6 }}>
         <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
-          <Avatar src={`http://localhost:5000${buddy.photo}`} sx={{ width: 150, height: 150 }} />
+          <Avatar src={`https://buddymate-backend.onrender.com${buddy.photo}`} sx={{ width: 150, height: 150 }} />
           <Typography variant="h4">{buddy.name}</Typography>
           <Typography variant="body1" color="textSecondary">{buddy.role} • {buddy.area}</Typography>
           <Typography variant="body1">{buddy.bio}</Typography>
