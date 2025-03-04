@@ -2,11 +2,13 @@ import React from 'react';
 import { Container, Typography, Box } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Header from '../components/Header';
+import { Link as MUILink } from 'react-router-dom';
 
 const theme = createTheme({
   palette: {
-    primary: { main: '#C02641', contrastText: '#fff' },
-    background: { default: '#f5f5f5', paper: '#fff' },
+    primary: { main: '#0F9E99', contrastText: '#fff' },
+    background: { default: '#EFE9E0', paper: '#EFE9E0' },
+    text: { primary: '#333', secondary: '#666' },
   },
   typography: { fontFamily: 'Poppins, sans-serif' },
 });
@@ -21,45 +23,42 @@ function Legal({ darkMode, setDarkMode, language, setLanguage }) {
         </Typography>
         <Box sx={{ lineHeight: 1.6 }}>
           <Typography variant="body1" paragraph>
-            Welcome to BuddyMate! This document outlines our Privacy Policy and Terms of Agreement. By using our platform, you agree to both.
+            Welcome to BuddyMate! This document outlines our Privacy Policy and Terms of Agreement for all users. By using our platform, you agree to both.
           </Typography>
-
           <Typography variant="h6">Privacy Policy</Typography>
           <Typography variant="body1" paragraph>
-            Your privacy matters to us. Here’s how we handle your data:
+            We value your privacy. Here’s how we handle your data:
           </Typography>
           <Typography variant="subtitle1">1. Information We Collect</Typography>
           <Typography variant="body1" paragraph>
-            We collect your username, email, and password when you sign up. For Buddies, we may collect additional details like role and area.
+            We collect basic info like your username, email, and preferences to make your experience awesome.
           </Typography>
           <Typography variant="subtitle1">2. How We Use It</Typography>
           <Typography variant="body1" paragraph>
-            Your data helps us provide and improve BuddyMate, connect users with Buddies, and ensure safety.
+            Your data helps us connect you with buddies, improve our services, and keep things secure.
           </Typography>
-          <Typography variant="subtitle1">3. Sharing and Security</Typography>
+          <Typography variant="subtitle1">3. Security</Typography>
           <Typography variant="body1" paragraph>
-            We don’t share your info except as required by law. We use encryption to keep it secure.
+            We’ve got encryption and stuff to keep your info safe. No sharing unless the law says so.
           </Typography>
-
           <Typography variant="h6">Terms of Agreement</Typography>
           <Typography variant="body1" paragraph>
-            By using BuddyMate, you agree to these terms:
+            By signing up, you agree to play nice:
           </Typography>
-          <Typography variant="subtitle1">1. Use of Service</Typography>
+          <Typography variant="subtitle1">1. Be Cool</Typography>
           <Typography variant="body1" paragraph>
-            You must be 18+ to use BuddyMate. You’re responsible for your account’s security.
+            Respect others, keep it legal, and don’t be a jerk.
           </Typography>
-          <Typography variant="subtitle1">2. Buddy Responsibilities</Typography>
+          <Typography variant="subtitle1">2. Our Role</Typography>
           <Typography variant="body1" paragraph>
-            Buddies agree to provide accurate info and respect user safety and privacy.
+            We’re just the platform—your hangouts are your deal. We’re not liable for what happens.
           </Typography>
-          <Typography variant="subtitle1">3. Liability</Typography>
+          <Typography variant="subtitle1">3. Termination</Typography>
           <Typography variant="body1" paragraph>
-            BuddyMate isn’t liable for interactions between users and Buddies. Use at your own risk.
+            Break the rules, and we can kick you out. Simple.
           </Typography>
-
           <Typography variant="body1">
-            Questions? Contact us at support@buddymate.com.
+            Questions? Hit us up at <MUILink href="mailto:support@buddymate.com">support@buddymate.com</MUILink>.
           </Typography>
         </Box>
       </Container>

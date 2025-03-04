@@ -17,7 +17,7 @@ function BuddyInbox({ darkMode, setDarkMode, language, setLanguage, userProfile 
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/inbox/${userProfile.username}`)
+    fetch(`https://buddymate-backend.onrender.com/inbox/${userProfile.username}`)
       .then(res => res.json())
       .then(data => setMessages(data.messages || []))
       .catch(err => console.error('Fetch Inbox Error:', err));
