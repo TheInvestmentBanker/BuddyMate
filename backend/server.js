@@ -14,6 +14,7 @@ app.use(express.json());
 app.use(cors({
   origin: 'https://buddymate.space', // Replace with your frontend URL once set
   methods: 'GET,POST,PUT,DELETE',
+  allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
 }));
 app.use('/uploads', express.static('uploads'));
