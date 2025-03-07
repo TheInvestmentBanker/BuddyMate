@@ -4,7 +4,7 @@ import { Security, LocationOn, VideoCall } from '@mui/icons-material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import Hero from '../assets/hero.jpeg';
+import Hero from '../assets/hero.jpg';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import EdgeHeart from '../components/EdgeHeart';

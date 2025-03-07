@@ -40,7 +40,7 @@ function Signup({ setIsLoggedIn, setUserProfile }) {
     }
     console.log('Form Submitted with:', formData);
     try {
-      const response = await fetch('https://buddymate-backend.onrender.com/signup', {
+      const response = await fetch('https://buddymate.onrender.com/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),

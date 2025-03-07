@@ -19,7 +19,7 @@ const EdgeHeart = memo(() => {
     }
   };
 
-  const iconButtonBg = theme.palette.mode === 'dark' ? '#C02641' : '#C02641'; // Matches your theme
+  const iconButtonBg = theme.palette.mode === 'dark' ? '#0F9E99' : '#0F9E99'; // Matches your theme
   const iconButtonColor = theme.palette.mode === 'dark' ? '#ffffff' : '#fff';
 
   return (
