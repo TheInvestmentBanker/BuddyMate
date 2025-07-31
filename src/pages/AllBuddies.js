@@ -18,7 +18,7 @@ function AllBuddies({ darkMode, setDarkMode, language, setLanguage, isLoggedIn, 
   const [buddies, setBuddies] = useState([]);
 
   useEffect(() => {
-    fetch('https://buddymate-backend.onrender.com/buddies')
+    fetch('https://buddymate.onrender.com/buddies')
       .then(res => res.json())
       .then(data => setBuddies(data))
       .catch(err => console.error('Fetch Buddies Error:', err));
